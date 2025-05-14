@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+* {
+  text-decoration: none;
+}
+
+.bar {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 8vh;
+  text-align: center;
+  align-items: center;
+  color: blue;
+  font-size: 18px;
+}
+.navbar {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  background-color: white;
+  width: 100%;
+  height: 15vh;
+  text-align: center;
+  align-items: center;
+  color: blue;
+  font-size: 20px;
+}
+.firstpage {
+  width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url(./eduimages/heropic.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.firstpage-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 70px;
+}
+.sec2 {
+  height: 100vh;
+}
+.fullpg2 {
+  text-align: center;
+  text-decoration-line: underline;
+  padding-top: 20px;
+}
+
+.secondpage {
+  display: flex;
+  gap: 20px;
+  height: 70vh;
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.img {
+  color: blue;
+  font-size: 36px;
+  background-color: aqua;
+  position: absolute;
+  top: 80px;
+}
+
+.secondpagetext {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  font-family: cursive;
+  text-decoration-line: none;
+  border-style: ridge;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  width: 100px;
+  border-style: hidden;
+  background-color: rgb(181, 201, 207);
+  text-decoration: aliceblue;
+}
+
+.thirdpage {
+  background-color: rgb(110, 110, 190);
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+}
