@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="/eduimages/favicon.png" type="image/png">
+  <title>Our Courses - EduMatters</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
+    }
+/* NAVIGATION BAR */
+nav {
+
+  background-color: #2c3e50;
+  padding: 10px 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Nav menu styles */
+.navbar {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffcc00;
+}
+    .course-listing-page {
+      padding: 60px 20px;
+      background-color: #f7f9fc;
+    }
+
+    .page-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .page-header h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .course-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: left;
+    }
+
+    .course-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    .course-card h3 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .course-card p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .page-header h1 {
+        font-size: 24px;
+      }
+
+      .course-card img {
+        height: 160px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .courses-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+     <nav>
+ <div class="nav-container">
+    <div class="logo">EduMatters</div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <ul class="navbar" id="nav-menu">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/index.html#about">About Us</a></li>
+      <li><a href="/index.html#admission">Admission</a></li>
+      <li><a href="/index.html#courses">Courses</a></li>
+      <li><a href="/index.html#updates">News & Updates</a></li>
+      <li><a href="#" class="fa fa-facebook"></a></li> 
+      <li><a href="#" class="fa fa-twitter"></a></li>
+      <li><a href="#" class="fa fa-linkedin"></a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="course-listing-page">
+  <div class="page-header">
+    <h1>All Available Courses</h1>
+    <p>Discover detailed course information and choose the best path for your learning journey.</p>
+  </div>
+
+  <div class="courses-grid">
+    <div class="course-card">
+      <img src="/eduimages/edu1.jpg" alt="Mobile App Development" />
+      <h3>Mobile App Development</h3>
+      <p><strong>Price:</strong> $99.00</p>
+      <p>Master the essentials of mobile app development using Ionic and Capacitor. Learn to build cross-platform apps from scratch and publish them to the app store.</p>
+      <p><strong>Topics:</strong> HTML5, CSS3, Angular, Ionic Framework, Deployment</p>
+    </div>
+
+    <div class="course-card">
+      <img src="/eduimages/edu 2.jpg" alt="Web Development" />
+      <h3>Web Development</h3>
+      <p><strong>Price:</strong> $159.00</p>
+      <p>Learn front-end web development with HTML, CSS, and JavaScript. Work on responsive web projects and gain experience using modern tools like Flexbox and Grid.</p>
+      <p><strong>Topics:</strong> HTML, CSS, JavaScript, Responsive Design, Git</p>
+    </div>
+
+    <div class="course-card">
+      <img src="/eduimages/edu 3.png" alt="Data Analytics" />
+      <h3>Data Analytics</h3>
+      <p><strong>Price:</strong> $109.00</p>
+      <p>Analyze real-world data with Excel, Power BI, and Google Sheets. Understand dashboards, charts, and storytelling with data to inform decisions.</p>
+      <p><strong>Topics:</strong> Excel, Power BI, Google Sheets, Data Visualization</p>
+    </div>
+
+    <div class="course-card">
+      <img src="/eduimages/edu 4.jpg" alt="Digital Marketing" />
+      <h3>Digital Marketing</h3>
+      <p><strong>Price:</strong> $89.00</p>
+      <p>Learn SEO, social media marketing, email campaigns, and analytics. This course is perfect for aspiring digital marketers and entrepreneurs.</p>
+      <p><strong>Topics:</strong> SEO, Google Analytics, Email Marketing, Facebook Ads</p>
+    </div>
+
+    <div class="course-card">
+      <img src="/eduimages/edu 5.jpg" alt="Graphic Design" />
+      <h3>Graphic Design</h3>
+      <p><strong>Price:</strong> $85.00</p>
+      <p>Explore the principles of design with hands-on projects in Canva and Adobe tools. Perfect for creatives and content creators.</p>
+      <p><strong>Topics:</strong> Typography, Color Theory, Canva, Adobe Photoshop</p>
+    </div>
+
+    <div class="course-card">
+      <img src="/eduimages/edu6.jpg" alt="Public Speaking" />
+      <h3>Public Speaking</h3>
+      <p><strong>Price:</strong> $75.00</p>
+      <p>Boost your communication confidence. Learn to structure your message, engage an audience, and speak with clarity and impact.</p>
+      <p><strong>Topics:</strong> Presentation Skills, Body Language, Voice Control</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
